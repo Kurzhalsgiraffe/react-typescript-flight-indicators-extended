@@ -1,6 +1,5 @@
 import React from "react";
-
-import { FiBox } from "./generated";
+import { FiBox } from "./generated/index";
 
 const boxStyle = {
     width: "100%",

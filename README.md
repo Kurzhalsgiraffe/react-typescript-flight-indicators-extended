@@ -1,6 +1,7 @@
-# react-typescript-flight-indicators
+# react-typescript-flight-indicators-extended
 
-> A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators)
+**This is a fork of https://github.com/starnutoditopo/react-typescript-flight-indicators.**
+> A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with metric indicators and latest React version (19)
 
 [![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -10,12 +11,12 @@ Further, since all the images are vector svg, you can resize the indicators to y
 
 Currently supported indicators are :
 
--   Attitude (artificial horizon)
--   Heading
--   Vertical speed
--   Air speed
--   Altimeter
--   variometer
+- Attitude (artificial horizon)
+- Heading
+- Vertical speed
+- Air speed
+- Altimeter
+- Variometer
 
 `react-typescript-flight-indicators` is a porting from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
@@ -99,9 +100,9 @@ npm publish
 
 Here's a list of missing features:
 
--   General: set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
--   TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
--   ...
+- General: set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
+- TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
+- ...
 
 ## License
 
@@ -141,15 +142,15 @@ Initial project created with the following command:
 
 ### Code changes
 
--   Code ported to Typescript
--   Modified some SVG files to exclude Inkscape-related attributes
--   Using SVGR to include SVG as components (see: https://react-svgr.com/ )
--   Added memoization
+- Code ported to Typescript
+- Modified some SVG files to exclude Inkscape-related attributes
+- Using SVGR to include SVG as components (see: https://react-svgr.com/ )
+- Added memoization
 
 ### Publishing
 
--   updated package.json
--   published to NPM
+- updated package.json
+- published to NPM
 
 (according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
 
@@ -157,5 +158,5 @@ Initial project created with the following command:
 
 Here are some sandboxes you can inspect:
 
--   [Basic usage](https://codesandbox.io/s/8yq47)
--   [Real-time update](https://codesandbox.io/s/7wwfs)
+- [Basic usage](https://codesandbox.io/s/8yq47)
+- [Real-time update](https://codesandbox.io/s/7wwfs)
