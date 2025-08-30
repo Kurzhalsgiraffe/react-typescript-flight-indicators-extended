@@ -1,6 +1,7 @@
-# react-typescript-flight-indicators
+# react-typescript-flight-indicators-extended
 
-> A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators)
+**This is a fork of https://github.com/starnutoditopo/react-typescript-flight-indicators.**
+> A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with metric indicators and latest React version (19)
 
 [![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,7 +16,7 @@ Currently supported indicators are :
 - Vertical speed
 - Air speed
 - Altimeter
-- variometer
+- Variometer
 
 `react-typescript-flight-indicators` is a porting from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
