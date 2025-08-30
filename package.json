@@ -2,7 +2,7 @@
     "name": "react-typescript-flight-indicators-extended",
     "version": "1.0.0",
     "description": "A React + TypeScript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with metric instruments",
-    "author": "Starnuto di topo, pogacic",
+    "author": "pogacic",
     "license": "GPL-3.0",
     "type": "module",
     "keywords": [
@@ -36,15 +36,7 @@
     "engines": {
         "node": ">=18"
     },
-    "packageManager": "npm@9.5.1",
-    "tsup": {
-        "entry": [
-            "src/index.tsx"
-        ],
-        "splitting": false,
-        "sourcemap": true,
-        "clean": true
-    },
+    "packageManager": "npm@11.4.2",
     "scripts": {
         "build": "tsup",
         "check": "tsc --noEmit",
@@ -64,6 +56,6 @@
         "README.md"
     ],
     "dependencies": {
-        "react": "^19.1.1"
+        "react": ">18.0.0"
     }
 }
