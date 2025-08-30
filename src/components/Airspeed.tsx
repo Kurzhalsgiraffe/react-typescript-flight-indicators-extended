@@ -1,5 +1,6 @@
 import React from "react";
-import Instrument, { BoxStyle, InstrumentProperties } from "./Instrument";
+import Instrument, { BoxStyle } from "./Instrument";
+import type { InstrumentProperties } from "./Instrument";
 import { FiCircle, FiNeedle, SpeedMechanics } from "./generated";
 
 const constants = {

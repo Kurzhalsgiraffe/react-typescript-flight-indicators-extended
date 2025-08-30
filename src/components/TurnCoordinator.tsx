@@ -1,7 +1,6 @@
 import React from "react";
 import Instrument, { BoxStyle } from "./Instrument";
 import type { InstrumentProperties } from "./Instrument";
-
 import {
     FiCircle,
     TurnCoordinator as TurnCoordinatorImage,

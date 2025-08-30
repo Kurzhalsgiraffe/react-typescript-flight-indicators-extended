@@ -9,14 +9,6 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
         viewBox="0 0 400.667 400.666"
         {...props}
     >
-        <filter id="vertical_mechanics_svg__a" filterUnits="objectBoundingBox">
-            <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation={5} />
-            <feOffset in="blur" result="offsetBlurredAlpha" />
-            <feMerge>
-                <feMergeNode in="offsetBlurredAlpha" />
-                <feMergeNode in="SourceGraphic" />
-            </feMerge>
-        </filter>
         <circle cx={200.333} cy={200} r={161} fill="#232323" />
         <path
             fill="none"

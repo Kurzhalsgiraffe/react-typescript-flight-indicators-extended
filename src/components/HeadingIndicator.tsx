@@ -1,11 +1,11 @@
 import React from "react";
-import Instrument, { BoxStyle, InstrumentProperties } from "./Instrument";
-
+import Instrument, { BoxStyle } from "./Instrument";
+import type { InstrumentProperties } from "./Instrument";
 import { FiCircle, HeadingMechanics, HeadingYaw } from "./generated";
 
 type HeadingIndicatorProps = InstrumentProperties & {
     heading?: number;
-    
+
     // all the gauges maintain a square proportion (aspect ratio? who knows)
     size?: string;
 };
