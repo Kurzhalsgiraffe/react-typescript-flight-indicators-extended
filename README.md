@@ -7,12 +7,13 @@ A fork of https://github.com/starnutoditopo/react-typescript-flight-indicators w
 [![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators-extended.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators-extended) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > The `react-typescript-flight-indicators-extended` package allows you to display high quality flight indicators using html, css3, React, TypeScript and SVG images.
-The methods make customization and real-time implementation really easy.
-Further, since all the images are vector svg, you can resize the indicators to your application without any quality loss! - _Original forked repo_
+> The methods make customization and real-time implementation really easy.
+> Further, since all the images are vector svg, you can resize the indicators to your application without any quality loss! - _Original forked repo_
 
 > `react-typescript-flight-indicators` is a ported from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
 Currently supported indicators are :
+
 - Attitude (artificial horizon)
     - Pitch in degrees
     - Roll in degrees
@@ -35,6 +36,7 @@ Currently supported indicators are :
     - Kilometers per minute
 
 Other changes within this fork:
+
 - Smaller package size
 - ESM and CJS module support
 - Supports React 18 onwards
