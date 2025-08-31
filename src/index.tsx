@@ -5,6 +5,12 @@ import Airspeed from "./components/Airspeed";
 import Altimeter from "./components/Altimeter";
 import AttitudeIndicator from "./components/AttitudeIndicator";
 
+enum SpeedUnits {
+    METERS_PER_SECOND,
+    KILOMETERS_PER_SECOND,
+    KNOTS,
+}
+
 export {
     HeadingIndicator,
     Variometer,
@@ -12,4 +18,5 @@ export {
     Airspeed,
     Altimeter,
     AttitudeIndicator,
+    SpeedUnits,
 };

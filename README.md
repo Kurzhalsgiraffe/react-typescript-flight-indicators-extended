@@ -1,6 +1,7 @@
 # react-typescript-flight-indicators-extended
 
 **This is a fork of https://github.com/starnutoditopo/react-typescript-flight-indicators.**
+
 > A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with metric indicators and latest React version (19)
 
 [![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -25,13 +26,13 @@ Currently supported indicators are :
 Using YARN:
 
 ```bash
-yarn add react-typescript-flight-indicators
+yarn add react-typescript-flight-indicators-extended
 ```
 
 Alternatively, with NPM:
 
 ```bash
-npm install --save react-typescript-flight-indicators
+npm install --save react-typescript-flight-indicators-extended
 ```
 
 ## Usage
@@ -46,6 +47,7 @@ import {
     HeadingIndicator,
     TurnCoordinator,
     Variometer,
+    SpeedUnits,
 } from "react-typescript-flight-indicators";
 
 const Example = () => {
@@ -53,7 +55,7 @@ const Example = () => {
         <>
             <HeadingIndicator heading={Math.random() * 360} showBox={false} />
             <hr />
-            <Airspeed speed={Math.random() * 160} showBox={false} />
+            <Airspeed speed={Math.random() * 160} showBox={false} unit={SpeedUnits.METERS_PER_SECOND} />
             <hr />
             <Altimeter altitude={Math.random() * 28000} showBox={false} />
             <hr />
@@ -74,51 +76,19 @@ const Example = () => {
 };
 ```
 
-## Build
+# Instruments
 
-Using YARN:
+## Airspeed
 
-```bash
-yarn install
-yarn build
-```
+- Meters per second
+- Kilometers per second
+- Knots
 
-or:
-
-```bash
-npm install
-npm run build
-```
-
-**Note:** to publish on NPM:
-
-```bash
-npm publish
-```
-
-## TODOs
-
-Here's a list of missing features:
-
-- General: set custom scales (min/max values, ticks, limits of yellow/green arcs, ...)
-- TurnCoordinator: currently, the slip-skid indicator ball is fixed; a property should be added to edit its position.
-- ...
+![alt text](documentation/airspeed.png)
 
 ## License
 
 GPL-3.0 © [Starnuto di topo](https://github.com/starnutoditopo)
-
-## Example & Demo
-
-The JQuery demo can be found here : [http://sebmatton.github.io/flightindicators/](http://sebmatton.github.io/flightindicators/)
-
-Here are a few examples of currently implemented indicators :
-
-![demo_example](documentation/example.png "Indicator examples")
-
-The image below shows a part of an 800px indicator. Vector images allows you to keep high quality render with large indicators.
-
-![demo_highres](documentation/example_highres.png "High resolution indicator")
 
 ## Authors and License
 
@@ -129,34 +99,3 @@ Further work is done by Sébastien Matton (seb_matton@hotmail.com), who develope
 [Corstian Boerman](https://corstianboerman.com) has adapted the project by Sébastien for use with React.
 
 The project is published under GPLv3 License. See LICENSE file for more informations
-
-## Development log
-
-### Created typescript react project
-
-Initial project created with the following command:
-
-    docker run -it --rm -v ${PWD}:/app -p 3000:3000 --entrypoint /bin/sh node:16.0.0-alpine3.13 -c "cd /app && npx create-react-library"
-
-(references: https://www.npmjs.com/package/create-react-library )
-
-### Code changes
-
-- Code ported to Typescript
-- Modified some SVG files to exclude Inkscape-related attributes
-- Using SVGR to include SVG as components (see: https://react-svgr.com/ )
-- Added memoization
-
-### Publishing
-
-- updated package.json
-- published to NPM
-
-(according to https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f )
-
-## Code sanboxes
-
-Here are some sandboxes you can inspect:
-
-- [Basic usage](https://codesandbox.io/s/8yq47)
-- [Real-time update](https://codesandbox.io/s/7wwfs)
