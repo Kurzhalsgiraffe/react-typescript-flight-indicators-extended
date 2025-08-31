@@ -625,7 +625,7 @@
    font-size="25px"
    id="text56"
    x="193.65919"
-   y="102.1489">1</text>
+   y="102.1489">20</text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -635,7 +635,7 @@
    font-size="25px"
    id="text57"
    x="192.65919"
-   y="316.4985">1</text>
+   y="316.4985">20</text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -644,7 +644,7 @@
    font-size="25px"
    id="text58"
    x="112.1099"
-   y="131.86079">.5</text>
+   y="131.86079">10</text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -653,49 +653,31 @@
    font-size="25px"
    id="text59"
    x="112.1108"
-   y="283.53131">.5</text>
+   y="283.53131">10</text>
 <text
    id="text60"
-   x="258.84769"
-   y="135.48289"><tspan
-     x="258.84769"
-     y="135.48289"
+   x="243.74118"
+   y="137.19955"><tspan
+     x="254.09619"
+     y="137.19955"
      fill="#ffffff"
      stroke="#ffffff"
      stroke-miterlimit="10"
      font-family="sans-serif"
      font-size="25px"
-     letter-spacing="-3"
-     id="tspan59">1</tspan><tspan
-     x="269.2027"
-     y="135.48289"
-     fill="#ffffff"
-     stroke="#ffffff"
-     stroke-miterlimit="10"
-     font-family="sans-serif"
-     font-size="25px"
-     id="tspan60">.5</tspan></text>
+     id="tspan60">30</tspan></text>
 <text
    id="text62"
-   x="261.22461"
-   y="281.81641"><tspan
-     x="261.22461"
-     y="281.81641"
+   x="245.08809"
+   y="281.12973"><tspan
+     x="255.44308"
+     y="281.12973"
      fill="#ffffff"
      stroke="#ffffff"
      stroke-miterlimit="10"
      font-family="sans-serif"
      font-size="25px"
-     letter-spacing="-3"
-     id="tspan61">1</tspan><tspan
-     x="271.57959"
-     y="281.81641"
-     fill="#ffffff"
-     stroke="#ffffff"
-     stroke-miterlimit="10"
-     font-family="sans-serif"
-     font-size="25px"
-     id="tspan62">.5</tspan></text>
+     id="tspan62">30</tspan></text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -704,8 +686,8 @@
    font-size="25px"
    letter-spacing="-3"
    id="text63"
-   x="304.8989"
-   y="208.5229">2</text>
+   x="303.8689"
+   y="208.86623">40</text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -724,6 +706,6 @@
    font-family="sans-serif"
    font-size="14px"
    id="text65"
-   x="158.46625"
-   y="254.03111">1000ft / min</text>
+   x="173.57275"
+   y="254.03111">km / min</text>
 </svg>
