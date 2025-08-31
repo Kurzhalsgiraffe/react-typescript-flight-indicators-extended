@@ -16,3 +16,5 @@ export { default as SpeedMechanicsKnots } from "./SpeedMechanicsKnots";
 export { default as SpeedMechanicsMs } from "./SpeedMechanicsMs";
 export { default as TurnCoordinator } from "./TurnCoordinator";
 export { default as VerticalMechanics } from "./VerticalMechanics";
+export { default as VerticalMechanicsKmm } from "./VerticalMechanicsKmm";
+export { default as VerticalMechanicsMs } from "./VerticalMechanicsMs";

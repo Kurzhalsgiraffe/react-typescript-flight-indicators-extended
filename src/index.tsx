@@ -8,6 +8,8 @@ import AttitudeIndicator from "./components/AttitudeIndicator";
 enum SpeedUnits {
     METERS_PER_SECOND,
     KILOMETERS_PER_SECOND,
+    KILOMETERS_PER_MINUTE,
+    FEET_PER_MINUTE,
     KNOTS,
 }
 

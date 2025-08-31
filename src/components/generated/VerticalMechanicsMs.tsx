@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
+const SvgVerticalMechanicsMs = (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve"
@@ -95,7 +95,7 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={25}
         >
-            {"1"}
+            {"5"}
         </text>
         <text
             x={192.659}
@@ -107,7 +107,7 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={25}
         >
-            {"1"}
+            {"5"}
         </text>
         <text
             x={112.11}
@@ -118,7 +118,7 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={25}
         >
-            {".5"}
+            {"2.5"}
         </text>
         <text
             x={112.111}
@@ -129,61 +129,37 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={25}
         >
-            {".5"}
+            {"2.5"}
         </text>
-        <text x={258.848} y={135.483}>
+        <text x={243.741} y={137.2}>
             <tspan
-                x={258.848}
-                y={135.483}
-                fill="#fff"
-                stroke="#fff"
-                strokeMiterlimit={10}
-                fontFamily="sans-serif"
-                fontSize={25}
-                letterSpacing={-3}
-            >
-                {"1"}
-            </tspan>
-            <tspan
-                x={269.203}
-                y={135.483}
+                x={254.096}
+                y={137.2}
                 fill="#fff"
                 stroke="#fff"
                 strokeMiterlimit={10}
                 fontFamily="sans-serif"
                 fontSize={25}
             >
-                {".5"}
+                {"7.5"}
             </tspan>
         </text>
-        <text x={261.225} y={281.816}>
+        <text x={245.088} y={281.13}>
             <tspan
-                x={261.225}
-                y={281.816}
-                fill="#fff"
-                stroke="#fff"
-                strokeMiterlimit={10}
-                fontFamily="sans-serif"
-                fontSize={25}
-                letterSpacing={-3}
-            >
-                {"1"}
-            </tspan>
-            <tspan
-                x={271.58}
-                y={281.816}
+                x={255.443}
+                y={281.13}
                 fill="#fff"
                 stroke="#fff"
                 strokeMiterlimit={10}
                 fontFamily="sans-serif"
                 fontSize={25}
             >
-                {".5"}
+                {"7.5"}
             </tspan>
         </text>
         <text
-            x={304.899}
-            y={208.523}
+            x={303.869}
+            y={208.866}
             fill="#fff"
             stroke="#fff"
             strokeMiterlimit={10}
@@ -191,7 +167,7 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontSize={25}
             letterSpacing={-3}
         >
-            {"2"}
+            {"10"}
         </text>
         <text
             x={143.45}
@@ -206,8 +182,8 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             {"VERTICAL SPEED"}
         </text>
         <text
-            x={158.466}
-            y={254.031}
+            x={183.529}
+            y={252.658}
             fill="#fff"
             stroke="#fff"
             strokeMiterlimit={10}
@@ -215,8 +191,8 @@ const SvgVerticalMechanics = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={14}
         >
-            {"1000ft / min"}
+            {"m / s"}
         </text>
     </svg>
 );
-export default SvgVerticalMechanics;
+export default SvgVerticalMechanicsMs;

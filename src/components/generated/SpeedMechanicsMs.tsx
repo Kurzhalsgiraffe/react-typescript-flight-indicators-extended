@@ -179,7 +179,7 @@ const SvgSpeedMechanicsMs = (props: SVGProps<SVGSVGElement>) => (
             fontFamily="sans-serif"
             fontSize={14}
         >
-            {"M / S"}
+            {"m / s"}
         </text>
         <text
             x={161.309}

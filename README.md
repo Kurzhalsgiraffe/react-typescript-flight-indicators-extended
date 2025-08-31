@@ -23,7 +23,7 @@ Currently supported indicators are :
 - Variometer
     - Feet per minute
     - Meters per second
-    - Meters per minute
+    - Kilometers per minute
 
 `react-typescript-flight-indicators` is a ported from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
@@ -44,6 +44,7 @@ npm install --save react-typescript-flight-indicators-extended
 ## Usage
 
 ```ts
+
 ```
 
 # Instruments
