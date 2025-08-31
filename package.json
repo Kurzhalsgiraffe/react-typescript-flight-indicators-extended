@@ -1,6 +1,6 @@
 {
     "name": "react-typescript-flight-indicators-extended",
-    "version": "0.0.1-alpha.1",
+    "version": "0.0.1-alpha.2",
     "description": "A React + TypeScript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with metric instruments",
     "author": "pogacic",
     "license": "GPL-3.0",
