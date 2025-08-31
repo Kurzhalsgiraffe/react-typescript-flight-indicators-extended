@@ -7,6 +7,7 @@ import {
     AltitudePressure,
     AltitudeTicks,
     FiNeedleSmall,
+    FiNeedleSmallest,
 } from "./generated";
 
 type AltimeterProperties = InstrumentProperties & {
@@ -18,6 +19,7 @@ function Altimeter(props: AltimeterProperties) {
     const altitude = props.altitude ?? 0;
     const needle = 90 + ((altitude % 1000) * 360) / 1000;
     const needleSmall = (altitude / 10000) * 360;
+    const needleSmallest = (altitude / 100000) * 360;
 
     const pressure = 2 * (props.pressure ?? 1013.25) - 1980;
 
@@ -30,6 +32,15 @@ function Altimeter(props: AltimeterProperties) {
                 <AltitudePressure className="box" style={BoxStyle} />
             </div>
             <AltitudeTicks className="box" style={BoxStyle} />
+            <div
+                className="needleSmallest box"
+                style={{
+                    ...BoxStyle,
+                    transform: `rotate(${needleSmallest}deg)`,
+                }}
+            >
+                <FiNeedleSmallest className="box" style={BoxStyle} />
+            </div>
             <div
                 className="needleSmall box"
                 style={{ ...BoxStyle, transform: `rotate(${needleSmall}deg)` }}
