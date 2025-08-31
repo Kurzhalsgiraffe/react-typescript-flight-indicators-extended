@@ -1,9 +1,11 @@
 export { default as AltitudePressure } from "./AltitudePressure";
 export { default as AltitudeTicks } from "./AltitudeTicks";
+export { default as AltitudeTicksM } from "./AltitudeTicksM";
 export { default as FiBox } from "./FiBox";
 export { default as FiCircle } from "./FiCircle";
 export { default as FiNeedle } from "./FiNeedle";
 export { default as FiNeedleSmall } from "./FiNeedleSmall";
+export { default as FiNeedleSmallest } from "./FiNeedleSmallest";
 export { default as FiTcAirplane } from "./FiTcAirplane";
 export { default as HeadingMechanics } from "./HeadingMechanics";
 export { default as HeadingYaw } from "./HeadingYaw";

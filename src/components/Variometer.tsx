@@ -9,7 +9,7 @@ import {
     VerticalMechanicsKmm,
     VerticalMechanicsMs,
 } from "./generated";
-import { SpeedUnits } from "..";
+import { VariometerUnits } from "..";
 
 const constants = {
     vario_bound: 1.95,
@@ -17,14 +17,14 @@ const constants = {
 
 type VariometerProperties = InstrumentProperties & {
     vario?: number;
-    unit: SpeedUnits;
+    unit: VariometerUnits;
 };
 
 function Variometer(props: VariometerProperties) {
     let vario = (props.vario ?? 0) / 1000;
 
-    if (props.unit == SpeedUnits.METERS_PER_SECOND) vario = vario * 200;
-    if (props.unit == SpeedUnits.KILOMETERS_PER_MINUTE) vario = vario * 50;
+    if (props.unit == VariometerUnits.METERS_PER_SECOND) vario = vario * 200;
+    if (props.unit == VariometerUnits.KILOMETERS_PER_MINUTE) vario = vario * 50;
 
     if (vario > constants.vario_bound) vario = constants.vario_bound;
     else if (vario < -constants.vario_bound) vario = -constants.vario_bound;
@@ -33,13 +33,13 @@ function Variometer(props: VariometerProperties) {
 
     return (
         <Instrument {...props}>
-            {props.unit == SpeedUnits.FEET_PER_MINUTE && (
+            {props.unit == VariometerUnits.FEET_PER_MINUTE && (
                 <VerticalMechanics className="box" style={BoxStyle} />
             )}
-            {props.unit == SpeedUnits.METERS_PER_SECOND && (
+            {props.unit == VariometerUnits.METERS_PER_SECOND && (
                 <VerticalMechanicsMs className="box" style={BoxStyle} />
             )}
-            {props.unit == SpeedUnits.KILOMETERS_PER_MINUTE && (
+            {props.unit == VariometerUnits.KILOMETERS_PER_MINUTE && (
                 <VerticalMechanicsKmm className="box" style={BoxStyle} />
             )}
 

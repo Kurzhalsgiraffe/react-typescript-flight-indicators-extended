@@ -7,17 +7,22 @@ import {
     AltitudePressure,
     AltitudeTicks,
     FiNeedleSmall,
+    FiNeedleSmallest,
+    AltitudeTicksM,
 } from "./generated";
+import { AltimeterUnits } from "..";
 
 type AltimeterProperties = InstrumentProperties & {
     altitude?: number;
-    pressure?: number;
+    pressure?: number; // hPa (Hectopascals)
+    unit: AltimeterUnits;
 };
 
 function Altimeter(props: AltimeterProperties) {
     const altitude = props.altitude ?? 0;
     const needle = 90 + ((altitude % 1000) * 360) / 1000;
     const needleSmall = (altitude / 10000) * 360;
+    const needleSmallest = (altitude / 100000) * 360;
 
     const pressure = 2 * (props.pressure ?? 1013.25) - 1980;
 
@@ -29,7 +34,22 @@ function Altimeter(props: AltimeterProperties) {
             >
                 <AltitudePressure className="box" style={BoxStyle} />
             </div>
-            <AltitudeTicks className="box" style={BoxStyle} />
+            {props.unit == AltimeterUnits.FEET_PER_MINUTE && (
+                <AltitudeTicks className="box" style={BoxStyle} />
+            )}
+            {props.unit == AltimeterUnits.METERS_PER_SECOND && (
+                <AltitudeTicksM className="box" style={BoxStyle} />
+            )}
+
+            <div
+                className="needleSmallest box"
+                style={{
+                    ...BoxStyle,
+                    transform: `rotate(${needleSmallest}deg)`,
+                }}
+            >
+                <FiNeedleSmallest className="box" style={BoxStyle} />
+            </div>
             <div
                 className="needleSmall box"
                 style={{ ...BoxStyle, transform: `rotate(${needleSmall}deg)` }}

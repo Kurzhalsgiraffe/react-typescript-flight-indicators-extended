@@ -8,7 +8,7 @@ import {
     SpeedMechanicsMs,
     SpeedMechanicsKms,
 } from "./generated";
-import { SpeedUnits } from "..";
+import { AirspeedUnits } from "..";
 
 const constants = {
     airspeed_bound_l: 0,
@@ -17,14 +17,14 @@ const constants = {
 
 type AirspeedProperties = InstrumentProperties & {
     speed?: number;
-    unit: SpeedUnits;
+    unit: AirspeedUnits;
 };
 
 function Airspeed(props: AirspeedProperties) {
     let speed = props.speed ?? 0;
 
-    if (props.unit == SpeedUnits.METERS_PER_SECOND) speed = speed * 2;
-    if (props.unit == SpeedUnits.KILOMETERS_PER_SECOND) speed = speed / 2;
+    if (props.unit == AirspeedUnits.METERS_PER_SECOND) speed = speed * 2;
+    if (props.unit == AirspeedUnits.KILOMETERS_PER_SECOND) speed = speed / 2;
 
     if (speed > constants.airspeed_bound_h) speed = constants.airspeed_bound_h;
     else if (speed < constants.airspeed_bound_l)
@@ -34,13 +34,13 @@ function Airspeed(props: AirspeedProperties) {
 
     return (
         <Instrument {...props}>
-            {props.unit == SpeedUnits.KNOTS && (
+            {props.unit == AirspeedUnits.KNOTS && (
                 <SpeedMechanicsKnots className="box" style={BoxStyle} />
             )}
-            {props.unit == SpeedUnits.METERS_PER_SECOND && (
+            {props.unit == AirspeedUnits.METERS_PER_SECOND && (
                 <SpeedMechanicsMs className="box" style={BoxStyle} />
             )}
-            {props.unit == SpeedUnits.KILOMETERS_PER_SECOND && (
+            {props.unit == AirspeedUnits.KILOMETERS_PER_SECOND && (
                 <SpeedMechanicsKms className="box" style={BoxStyle} />
             )}
 
