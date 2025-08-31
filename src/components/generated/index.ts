@@ -1,5 +1,6 @@
 export { default as AltitudePressure } from "./AltitudePressure";
 export { default as AltitudeTicks } from "./AltitudeTicks";
+export { default as AltitudeTicksM } from "./AltitudeTicksM";
 export { default as FiBox } from "./FiBox";
 export { default as FiCircle } from "./FiCircle";
 export { default as FiNeedle } from "./FiNeedle";

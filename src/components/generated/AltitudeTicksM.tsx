@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { SVGProps } from "react";
-const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
+const SvgAltitudeTicksM = (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve"
@@ -10,7 +10,7 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
         {...props}
     >
         <filter
-            id="altitude_ticks_svg__a"
+            id="altitude_ticks_m_svg__a"
             width={1.078}
             height={1.078}
             x={-0.039}
@@ -27,7 +27,7 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
         <path
             fill="#232323"
             d="M200.333 47c-84.497 0-153 68.503-153 153s68.503 153 153 153 153-68.503 153-153-68.502-153-153-153m75.517 174.422A78.5 78.5 0 0 0 278.834 200a78.5 78.5 0 0 0-2.958-21.332l49.113-13.869c3.155 11.193 4.846 23 4.846 35.201 0 12.256-1.704 24.114-4.886 35.351z"
-            filter="url(#altitude_ticks_svg__a)"
+            filter="url(#altitude_ticks_m_svg__a)"
         />
         <path
             fill="none"
@@ -55,8 +55,8 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
             {"0"}
         </text>
         <text
-            x={179.788}
-            y={160.828}
+            x={179.587}
+            y={160.535}
             fill="#fff"
             stroke="#fff"
             strokeMiterlimit={10}
@@ -163,17 +163,17 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
             d="M154.451 277.04a89.2 89.2 0 0 0 20.072 8.833l-18.447-11.562zM160.444 266.978l36.045 22.592c1.275.054 2.555.09 3.844.09 4.176 0 8.285-.286 12.308-.839l-47.482-29.761ZM169.527 251.726l55.169 34.578a89 89 0 0 0 11.079-3.929l-61.533-38.566zM200.333 240.833a40.3 40.3 0 0 1-20.868-5.794l-.855 1.437 66.101 41.43c.482-.275.967-.544 1.443-.828l-8.686-14.584-34.692-21.744c-.809.047-1.621.083-2.443.083M221.14 235.076a40.4 40.4 0 0 1-6.408 3.095l13.165 8.252z"
         />
         <text
-            x={209.888}
-            y={81.333}
+            x={210.544}
+            y={86.023}
             fill="#fff"
             fontFamily="sans-serif"
             fontSize={11}
         >
-            {"FEET"}
+            {"METERS"}
         </text>
         <text
-            x={174.315}
-            y={81.333}
+            x={171.091}
+            y={86.316}
             fill="#fff"
             fontFamily="sans-serif"
             fontSize={11}
@@ -181,32 +181,23 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
             {"100"}
         </text>
         <text
-            x={172.838}
-            y={140.228}
+            x={164.53}
+            y={140.22}
             fill="#fff"
             fontFamily="sans-serif"
             fontSize={11}
         >
-            {"1000 FEET"}
+            {"1000 METERS"}
         </text>
-        <text
-            x={167.891}
-            y={170.965}
-            fill="#fff"
-            fontFamily="sans-serif"
-            fontSize={11}
-        >
-            {"10000 FEET"}
-        </text>
-        <text x={137.751} y={219.763}>
+        <text x={130.716} y={218.297}>
             <tspan
-                x={162.204}
-                y={231.763}
+                x={155.169}
+                y={230.297}
                 fill="#fff"
                 fontFamily="sans-serif"
                 fontSize={12}
             >
-                {"25 000 FEET"}
+                {"15 000 METERS"}
             </tspan>
         </text>
         <text
@@ -220,6 +211,15 @@ const SvgAltitudeTicks = (props: SVGProps<SVGSVGElement>) => (
         >
             {"6"}
         </text>
+        <text
+            x={160.554}
+            y={171.125}
+            fill="#fff"
+            fontFamily="sans-serif"
+            fontSize={11}
+        >
+            {"10000 METERS"}
+        </text>
     </svg>
 );
-export default SvgAltitudeTicks;
+export default SvgAltitudeTicksM;

@@ -5,12 +5,21 @@ import Airspeed from "./components/Airspeed";
 import Altimeter from "./components/Altimeter";
 import AttitudeIndicator from "./components/AttitudeIndicator";
 
-enum SpeedUnits {
+enum AirspeedUnits {
+    KNOTS,
     METERS_PER_SECOND,
     KILOMETERS_PER_SECOND,
-    KILOMETERS_PER_MINUTE,
+}
+
+enum AltimeterUnits {
     FEET_PER_MINUTE,
-    KNOTS,
+    METERS_PER_SECOND,
+}
+
+enum VariometerUnits {
+    FEET_PER_MINUTE,
+    METERS_PER_SECOND,
+    KILOMETERS_PER_MINUTE,
 }
 
 export {
@@ -20,5 +29,7 @@ export {
     Airspeed,
     Altimeter,
     AttitudeIndicator,
-    SpeedUnits,
+    AirspeedUnits,
+    AltimeterUnits,
+    VariometerUnits,
 };

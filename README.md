@@ -2,30 +2,42 @@
 
 **This is a fork of https://github.com/starnutoditopo/react-typescript-flight-indicators.**
 
-> A React + Typescript porting of react-flight-indicators (https://github.com/skyhop/react-flight-indicators) extended with additional indicator functionality, ESM and CJS module support.
+A fork of https://github.com/starnutoditopo/react-typescript-flight-indicators with metric instruments, features and better support.
 
-[![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators-extended.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-typescript-flight-indicators-extended.svg)](https://www.npmjs.com/package/react-typescript-flight-indicators-extended) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-The `react-typescript-flight-indicators-extended` package allows you to display high quality flight indicators using html, css3, React, TypeScript and SVG images.
+> The `react-typescript-flight-indicators-extended` package allows you to display high quality flight indicators using html, css3, React, TypeScript and SVG images.
 The methods make customization and real-time implementation really easy.
-Further, since all the images are vector svg, you can resize the indicators to your application without any quality loss!
+Further, since all the images are vector svg, you can resize the indicators to your application without any quality loss! - _Original forked repo_
+
+> `react-typescript-flight-indicators` is a ported from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
 
 Currently supported indicators are :
-
 - Attitude (artificial horizon)
+    - Pitch in degrees
+    - Roll in degrees
 - Heading
-- Vertical speed
+    - Heading in degrees
+- Turn Coordinator
+    - Roll in degrees
 - Air speed
     - Meters per second
     - Kilometers per second
     - Knots
 - Altimeter
-- Variometer
+    - Feet
+    - Meters
+    - Pressure in hPa (Hectopascal)
+    - Added 10,000k needle for altimeter
+- Variometer (Vertical speed)
     - Feet per minute
     - Meters per second
     - Kilometers per minute
 
-`react-typescript-flight-indicators` is a ported from [skyhop/react-flight-indicators](https://github.com/skyhop/react-flight-indicators), and refactored for use with React and TypeScript.
+Other changes within this fork:
+- Smaller package size
+- ESM and CJS module support
+- Supports React 18 onwards
 
 ## Install
 
@@ -44,14 +56,43 @@ npm install --save react-typescript-flight-indicators-extended
 ## Usage
 
 ```ts
+import { Airspeed, AirspeedUnits, Altimeter, AltimeterUnits, AttitudeIndicator, HeadingIndicator, TurnCoordinator, Variometer, VariometerUnits } from 'react-typescript-flight-indicators-extended'
 
+
+function App() {
+  return (
+	  	<>
+            <HeadingIndicator heading={90} showBox={false} />
+            <AttitudeIndicator roll={10} pitch={-10} showBox={false} />
+            <TurnCoordinator turn={100} showBox={false} />
+
+            <hr />
+
+            <Airspeed speed={75} showBox={false} unit={AirspeedUnits.METERS_PER_SECOND} />
+            <Airspeed speed={280} showBox={false} unit={AirspeedUnits.KILOMETERS_PER_SECOND} />
+            <Airspeed speed={60} showBox={false} unit={AirspeedUnits.KNOTS} />
+
+            <hr />
+
+            <Variometer vario={500} showBox={false} unit={VariometerUnits.FEET_PER_MINUTE} />
+            <Variometer vario={2.5} showBox={false} unit={VariometerUnits.METERS_PER_SECOND} />
+            <Variometer vario={30} showBox={false} unit={VariometerUnits.KILOMETERS_PER_MINUTE} />
+
+            <hr />
+
+            <Altimeter altitude={13700} pressure={1005} unit={AltimeterUnits.FEET_PER_MINUTE} showBox={false} />
+            <Altimeter altitude={20000} pressure={990} showBox={false} unit={AltimeterUnits.METERS_PER_SECOND} />
+            <Altimeter altitude={15000} pressure={1035} showBox={false} unit={AltimeterUnits.METERS_PER_SECOND} />
+	  	</>
+  )
+}
+
+export default App
 ```
 
 # Instruments
 
-## Airspeed
-
-![alt text](documentation/airspeed.png)
+![alt text](documentation/image.png)
 
 ## License
 

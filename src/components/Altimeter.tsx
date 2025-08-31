@@ -8,11 +8,14 @@ import {
     AltitudeTicks,
     FiNeedleSmall,
     FiNeedleSmallest,
+    AltitudeTicksM,
 } from "./generated";
+import { AltimeterUnits } from "..";
 
 type AltimeterProperties = InstrumentProperties & {
     altitude?: number;
-    pressure?: number;
+    pressure?: number; // hPa (Hectopascals)
+    unit: AltimeterUnits;
 };
 
 function Altimeter(props: AltimeterProperties) {
@@ -31,7 +34,13 @@ function Altimeter(props: AltimeterProperties) {
             >
                 <AltitudePressure className="box" style={BoxStyle} />
             </div>
-            <AltitudeTicks className="box" style={BoxStyle} />
+            {props.unit == AltimeterUnits.FEET_PER_MINUTE && (
+                <AltitudeTicks className="box" style={BoxStyle} />
+            )}
+            {props.unit == AltimeterUnits.METERS_PER_SECOND && (
+                <AltitudeTicksM className="box" style={BoxStyle} />
+            )}
+
             <div
                 className="needleSmallest box"
                 style={{

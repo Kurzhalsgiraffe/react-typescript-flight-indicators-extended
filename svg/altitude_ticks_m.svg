@@ -562,8 +562,8 @@
    font-family="sans-serif"
    font-size="25px"
    id="text52"
-   x="179.78793"
-   y="160.82808">ALT</text>
+   x="179.58714"
+   y="160.53494">ALT</text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -681,38 +681,32 @@
    font-family="sans-serif"
    font-size="11px"
    id="text69"
-   x="209.8882"
-   y="81.333">FEET</text>
+   x="210.54356"
+   y="86.023155">METERS</text>
 <text
    fill="#ffffff"
    font-family="sans-serif"
    font-size="11px"
    id="text70"
-   x="174.3154"
-   y="81.333">100</text>
+   x="171.09093"
+   y="86.316284">100</text>
 <text
    fill="#ffffff"
    font-family="sans-serif"
    font-size="11px"
    id="text71"
-   x="172.83818"
-   y="140.22826">1000 FEET</text><text
-   fill="#ffffff"
-   font-family="sans-serif"
-   font-size="11px"
-   id="text71-4"
-   x="167.8905"
-   y="170.9653">10000 FEET</text>
+   x="164.53003"
+   y="140.22021">1000 METERS</text>
 <text
    id="text73"
-   x="137.75131"
-   y="219.76276"><tspan
-     x="162.20432"
-     y="231.76276"
+   x="130.71609"
+   y="218.29709"><tspan
+     x="155.1691"
+     y="230.29709"
      fill="#ffffff"
      font-family="sans-serif"
      font-size="12px"
-     id="tspan72">25 000 FEET</tspan></text>
+     id="tspan72">15 000 METERS</tspan></text>
 <text
    fill="#ffffff"
    stroke="#ffffff"
@@ -721,4 +715,10 @@
    font-size="25px"
    id="text57-9"
    x="126.97945"
-   y="297.80966">6</text></svg>
+   y="297.80966">6</text><text
+   fill="#ffffff"
+   font-family="sans-serif"
+   font-size="11px"
+   id="text71-8"
+   x="160.554"
+   y="171.12526">10000 METERS</text></svg>
